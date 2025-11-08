@@ -1,5 +1,12 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .leaf-path{
-    animation: sway 1s ease-in-out infinite;
+    animation: sway 3s ease-in-out infinite;
     transform-origin: bottom;
     fill: green;
 }
@@ -9,13 +16,13 @@
         transform: rotate(0deg);
     }
     25%{
-        transform: rotate(7deg);
+        transform: rotate(-5deg);
     }
     50%{
         transform: rotate(10deg);
     }
     75%{
-        transform: rotate(13deg);
+        transform: rotate(18deg);
     }
     100%{
         transform: rotate(0deg);
