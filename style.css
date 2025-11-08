@@ -1,4 +1,16 @@
 .leaf-path{
+    animation: sway 4s ease-in-out infinite;
     fill: green;
 }
 
+@keyframes sway{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
