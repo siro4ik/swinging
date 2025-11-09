@@ -36,22 +36,33 @@ body{
     animation: mid-sway 4s ease-in-out infinite;
     transform-origin: bottom;
     fill: green;
-    animation-delay: 0.1s;
 }
 
 .leaf-tip {
-    animation: tip-sway 3s ease-in-out infinite;
+    animation: tip-sway 4s ease-in-out infinite;
     transform-origin: bottom;
     fill: lightgreen;
-    animation-delay: 0.2s;
+}
+
+.leaf-base{
+    animation: bottom-sway 4s ease-in-out infinite;
+    transform-origin: bottom;
+    fill: darkgreen
+
+}
+
+@keyframes bottom-sway{
+    0%, 100% { transform: rotate(0deg); }
+    50%{transform: rotate(8deg);}
 }
 
 @keyframes mid-sway{
     0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(5deg); }
+    50% { transform: rotate(10deg); }
 }
 
 @keyframes tip-sway{
     0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(12deg); }
+    50% { transform: rotate(15deg); }
 }
+
