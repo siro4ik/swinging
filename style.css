@@ -6,25 +6,28 @@ body{
 }
 
 .leaf-path{
-    animation: sway 3s ease-in-out infinite;
+    animation: sway 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
     transform-origin: bottom;
     fill: green;
 }
-
+ 
 @keyframes sway{
-    0%{
-        transform: rotate(0deg);
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
     }
-    25%{
-        transform: rotate(-5deg);
+    20% {
+        transform: rotate(-7deg) translateX(-4px) translateY(-2px);
     }
-    50%{
-        transform: rotate(10deg);
+    40% {
+        transform: rotate(5deg) translateX(3px) translateY(-1px);
     }
-    75%{
-        transform: rotate(18deg);
+    60% {
+        transform: rotate(12deg) translateX(2px) translateY(2px);
     }
-    100%{
-        transform: rotate(0deg);
+    80% {
+        transform: rotate(2deg) translateX(2px) translateY(1px);
+    }
+    100% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
     }
 }
