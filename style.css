@@ -51,6 +51,13 @@ body{
 
 }
 
+.leaf-skew-final {
+    animation: natural-skew 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+    transform-origin: center bottom;
+    fill: #4CAF50;
+    filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
+}
+
 @keyframes bottom-sway{
     0%, 100% { transform: rotate(0deg); }
     50%{transform: rotate(8deg);}
