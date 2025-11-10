@@ -53,7 +53,7 @@ body{
 
 .leaf-skew-final {
     animation: natural-skew 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-    transform-origin: bottom;
+    transform-origin: center bottom;
     fill: #4CAF50;
     filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
 }
@@ -75,22 +75,22 @@ body{
 
 @keyframes natural-skew {
     0% {
-        transform: skewX(0deg) translateX(-5px) scaleY(1);
+        transform: skewX(0deg) translateX(0px) scaleY(1);
     }
     20% {
         transform: skewX(8deg) translateX(-5px) scaleY(0.97);
     }
     40% {
-        transform: skewX(-6deg) translateX(-5px) scaleY(0.98);
+        transform: skewX(-6deg) translateX(8px) scaleY(0.98);
     }
     60% {
-        transform: skewX(10deg) translateX(-5px) scaleY(0.94);
+        transform: skewX(10deg) translateX(-3px) scaleY(0.94);
     }
     80% {
-        transform: skewX(-10deg) translateX(-5px) scaleY(0.96);
+        transform: skewX(-10deg) translateX(-6px) scaleY(0.96);
     }
     100% {
-        transform: skewX(0deg) translateX(-5px) scaleY(1);
+        transform: skewX(0deg) translateX(0px) scaleY(1);
     }
 }
 
