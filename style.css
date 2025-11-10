@@ -53,7 +53,7 @@ body{
 
 .leaf-skew-final {
     animation: natural-skew 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-    transform-origin: center bottom;
+    transform-origin: bottom;
     fill: #4CAF50;
     filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
 }
@@ -71,5 +71,26 @@ body{
 @keyframes tip-sway{
     0%, 100% { transform: rotate(0deg); }
     50% { transform: rotate(15deg); }
+}
+
+@keyframes natural-skew {
+    0% {
+        transform: skewX(0deg) scaleY(1);
+    }
+    20% {
+        transform: skewX(8deg) scaleY(0.97);
+    }
+    40% {
+        transform: skewX(-6deg) scaleY(0.98);
+    }
+    60% {
+        transform: skewX(10deg) scaleY(0.94);
+    }
+    80% {
+        transform: skewX(-10deg) scaleY(0.96);
+    }
+    100% {
+        transform: skewX(0deg) scaleY(1);
+    }
 }
 
